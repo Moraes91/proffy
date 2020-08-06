@@ -21,7 +21,6 @@
 .logo-container {
     text-align: center;
     margin-bottom: 3.2rem;
-    text-align: left;
 }
 
 .logo-container h2 {
@@ -111,6 +110,7 @@
         grid-area: logo;
         align-self: center;
         margin: 0;
+        text-align: left;
     }
     .logo-container h2 {
         text-align: initial;
