@@ -14,7 +14,27 @@ export default class ClassesController {
     
     //MÉTODO PARA LISTAGEM DAS AULAS
     async index(request:Request, response:Response) {
+        const filters = request.query;
 
+        const week_day = filters.week_day as string;
+        const subject = filters.subject as string;
+        const time = filters.time as string;
+
+        //verificando se campos para pesquisa estão preenchidos
+        if (!filters.week_day || !filters.subject || !filters.time) {
+            return response.status(400).json({
+                error: 'Missing filters to search classes'
+            });
+        }
+
+        //conversão de horas para minutos
+        const timeInMinutes = convertHourToMinutes(time);
+
+        //consulta por matéria
+        const classes = await db('classes')
+            .where('classes.subject', '=', subject)
+        
+        return response.json(classes);
     }    
     
     //CRIAÇÃO DE NOVA AULA
