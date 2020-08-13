@@ -1,6 +1,6 @@
-<h3 align="center">
-  *Proffy*
-</h3>
+<h1 align="center">
+  Proffy
+</h1>
 
 ## 📋 Índice
 
