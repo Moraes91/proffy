@@ -38,6 +38,6 @@ O projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ## ⌨ Como executar o projeto
 
-Baixe o arquivo .ZIP do projeto e após descompactar execute o comando yarn start na pasta server e na pasta web.
+Baixe o arquivo .ZIP do projeto e após descompactar execute pelo terminal o comando "yarn start" na pasta server e na pasta web.
 
 ---
