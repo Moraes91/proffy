@@ -21,7 +21,7 @@
 
 ## 📖 Sobre 
 
-O Proffy é uma plataforma para conectar professores e alunos interessados em aulas particulares, desenvolvimento como projeto da Rocketseat durante a Next Level Week 2.
+O Proffy é uma plataforma para conectar professores e alunos interessados em aulas particulares, desenvolvido como projeto da Rocketseat durante a Next Level Week 2. Durante a semana foi realizado o desenvolvimento completo da aplicação (Frontend, Backend e Mobile).
 
 ---
 
