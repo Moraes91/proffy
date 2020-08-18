@@ -2,6 +2,8 @@ import React from 'react';
 
 import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
+import Textarea from '../../components/Textarea';
+import Select from '../../components/Select';
 
 import warningIcon from '../../assets/images/icons/warning.svg';
 
@@ -22,13 +24,34 @@ function TeacherForm () {
                     <Input name="name" label="Nome completo"/>
                     <Input name="avatar" label="Avatar"/>
                     <Input name="whatsapp" label="Whatsapp"/>
-
+                    <Textarea name="bio" label="Biografia" />
+ 
                 </fieldset>
 
                 <fieldset>
                     <legend>Sobre a aula</legend>
+                    
 
-                    <Input name="subject" label="Matéria"/>
+                    <Select 
+                        name="subject" 
+                        label="Matéria"
+                        options={[
+                            { value:'Artes', label:'Artes' },
+                            { value:'Português', label:'Português' },
+                            { value:'Matemática', label:'Matemática' },
+                            { value:'Química', label:'Química' },
+                            { value:'Física', label:'Física' },
+                            { value:'Literatura', label:'Literatura' },
+                            { value:'História', label:'História' },
+                            { value:'Geografia', label:'Geografia' },
+                            { value:'Filosofia', label:'Filosofia' },
+                            { value:'Sociologia', label:'Sociologia' },
+                            { value:'Música', label:'Música' },
+                            { value:'Educação Física', label:'Educação Física' },
+                            { value:'Religião', label:'Religião' },
+                            { value:'Geometria', label:'Geometria' },
+                        ]}
+                    />
                     <Input name="cost" label="Custo da sua hora por aula" />
 
                 </fieldset>
