@@ -18,6 +18,7 @@ function TeacherForm () {
             />
 
             <main>
+                
                 <fieldset>
                     <legend>Seus dados</legend>
 
@@ -29,8 +30,7 @@ function TeacherForm () {
                 </fieldset>
 
                 <fieldset>
-                    <legend>Sobre a aula</legend>
-                    
+                    <legend>Sobre a aula</legend>                   
 
                     <Select 
                         name="subject" 
@@ -52,8 +52,35 @@ function TeacherForm () {
                             { value:'Geometria', label:'Geometria' },
                         ]}
                     />
-                    <Input name="cost" label="Custo da sua hora por aula" />
 
+                    <Input name="cost" label="Custo da sua hora por aula" />
+                </fieldset>
+
+                <fieldset>
+                        <legend>
+                            Horários disponpiveis
+                            <button type="button">
+                                + Novo horário
+                            </button>
+                        </legend>
+
+                        <div className="schedule-item">
+                            <Select 
+                                name="week_day" 
+                                label="Dia da Semana"
+                                options={[
+                                    { value:'0', label:'Domingo' },
+                                    { value:'1', label:'Segunda' },
+                                    { value:'2', label:'Terça' },
+                                    { value:'3', label:'Quarta' },
+                                    { value:'4', label:'Quinta' },
+                                    { value:'5', label:'Sexta' },
+                                    { value:'6', label:'Sábado' }
+                                ]}
+                            /> 
+                            <Input name="from" label="Das" type="time" />
+                            <Input name="to" label="Até" type="time" />     
+                        </div>
                 </fieldset>
 
                 <footer>
