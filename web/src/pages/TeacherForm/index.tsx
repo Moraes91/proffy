@@ -1,4 +1,7 @@
 import React, {useState, FormEvent} from 'react';
+import { useHistory } from 'react-router-dom';
+
+import api from '../../services/api';
 
 import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
@@ -8,9 +11,11 @@ import Select from '../../components/Select';
 import warningIcon from '../../assets/images/icons/warning.svg';
 
 import './styles.css';
-import api from '../../services/api';
+
 
 function TeacherForm () {
+
+    const history = useHistory();
 
     //criação das variaveis do tipo estado
     const [name, setName] = useState('');
@@ -58,6 +63,7 @@ function TeacherForm () {
             schedule:scheduleItems
         }).then(() => {
             alert('Cadastro realizado com sucesso!');
+            history.push('/');
         }).catch(() => {
             alert('Erro no cadastro!');
         })
@@ -102,21 +108,23 @@ function TeacherForm () {
                             label="Matéria"
                             value={subject} 
                             onChange={(e) => { setSubject(e.target.value) }}   
-                            options={[
-                                { value:'Artes', label:'Artes' },
+                            options={[                                
                                 { value:'Português', label:'Português' },
-                                { value:'Matemática', label:'Matemática' },
-                                { value:'Química', label:'Química' },
-                                { value:'Física', label:'Física' },
                                 { value:'Literatura', label:'Literatura' },
+                                { value:'Matemática', label:'Matemática' },
                                 { value:'História', label:'História' },
                                 { value:'Geografia', label:'Geografia' },
+                                { value:'Ciências', label:'Ciências' },
+                                { value:'Física', label:'Física' },
+                                { value:'Química', label:'Química' },
+                                { value:'Geometria', label:'Geometria' },
                                 { value:'Filosofia', label:'Filosofia' },
                                 { value:'Sociologia', label:'Sociologia' },
-                                { value:'Música', label:'Música' },
-                                { value:'Educação Física', label:'Educação Física' },
                                 { value:'Religião', label:'Religião' },
-                                { value:'Geometria', label:'Geometria' },
+                                { value:'Artes', label:'Artes' },                           
+                                { value:'Música', label:'Música' },                   
+                                { value:'Educação Física', label:'Educação Física' },
+                                { value:'Informática', label:'Informática' },                               
                             ]}
                         />
 

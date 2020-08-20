@@ -17,20 +17,22 @@ function TeacherList () {
                         name="subject" 
                         label="Matéria"
                         options={[
-                            { value:'Artes', label:'Artes' },
                             { value:'Português', label:'Português' },
-                            { value:'Matemática', label:'Matemática' },
-                            { value:'Química', label:'Química' },
-                            { value:'Física', label:'Física' },
                             { value:'Literatura', label:'Literatura' },
+                            { value:'Matemática', label:'Matemática' },
                             { value:'História', label:'História' },
                             { value:'Geografia', label:'Geografia' },
+                            { value:'Ciências', label:'Ciências' },
+                            { value:'Física', label:'Física' },
+                            { value:'Química', label:'Química' },
+                            { value:'Geometria', label:'Geometria' },
                             { value:'Filosofia', label:'Filosofia' },
                             { value:'Sociologia', label:'Sociologia' },
-                            { value:'Música', label:'Música' },
-                            { value:'Educação Física', label:'Educação Física' },
                             { value:'Religião', label:'Religião' },
-                            { value:'Geometria', label:'Geometria' },
+                            { value:'Artes', label:'Artes' },                           
+                            { value:'Música', label:'Música' },                   
+                            { value:'Educação Física', label:'Educação Física' },
+                            { value:'Informática', label:'Informática' }, 
                         ]}
                     />
                     <Select 
