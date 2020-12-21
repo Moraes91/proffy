@@ -14,7 +14,7 @@
 ## 🖥 Preview
 
 <p align="center">
-  <img src="layout.png" width="700" >
+  <img src="layout.png" width="800" >
 </p>
 
 ---
