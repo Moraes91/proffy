@@ -32,7 +32,6 @@ O projeto está sendo desenvolvido com as seguintes tecnologias:
 - Typescript
 - React
 - Node.js
-- React Native
 
 ---
 
